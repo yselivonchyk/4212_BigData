@@ -1,0 +1,75 @@
+2014-06-11 13:25:44,679 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: BdaMusicRecommender:BdaMusicRecommender:0.0.1-SNAPSHOT @ /home/livlab/lecture/BdaMusicRecommender/pom.xml.
+2014-06-11 13:25:44,678 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: BdaMusicRecommender:BdaMusicRecommender:0.0.1-SNAPSHOT @ /home/livlab/lecture/BdaMusicRecommender/pom.xml.
+2014-06-11 13:25:50,685 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:25:50,716 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/BdaMusicRecommender/src/main/resources
+2014-06-11 13:25:50,720 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:25:50,720 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/BdaMusicRecommender/src/test/resources
+2014-06-11 13:25:51,542 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: BdaMusicRecommender:BdaMusicRecommender:0.0.1-SNAPSHOT @ /home/livlab/lecture/BdaMusicRecommender/pom.xml.
+2014-06-11 13:25:52,068 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:25:52,069 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/BdaMusicRecommender/src/main/resources
+2014-06-11 13:25:52,071 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:25:52,071 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/BdaMusicRecommender/src/test/resources
+2014-06-11 13:25:52,363 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: HadoopExamples:HadoopExamples:0.0.1-SNAPSHOT @ /home/livlab/lecture/HadoopExamples/pom.xml.
+2014-06-11 13:25:52,927 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:25:52,928 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/HadoopExamples/src/main/resources
+2014-06-11 13:25:52,929 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:25:52,929 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/HadoopExamples/src/test/resources
+2014-06-11 13:25:53,295 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: StormExamples:StormExamples:0.0.1-SNAPSHOT @ /home/livlab/lecture/StormExamples/pom.xml.
+2014-06-11 13:25:54,505 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:25:54,505 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/StormExamples/src/main/resources
+2014-06-11 13:25:54,506 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:25:54,507 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/StormExamples/src/test/resources
+2014-06-11 13:25:54,689 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: BdaMusicRecommender:BdaMusicRecommender:0.0.1-SNAPSHOT @ /home/livlab/lecture/BdaMusicRecommender/pom.xml.
+2014-06-11 13:25:55,358 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: HadoopExamples:HadoopExamples:0.0.1-SNAPSHOT @ /home/livlab/lecture/HadoopExamples/pom.xml.
+2014-06-11 13:25:55,432 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: StormExamples:StormExamples:0.0.1-SNAPSHOT @ /home/livlab/lecture/StormExamples/pom.xml.
+2014-06-11 13:25:55,753 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: BdaMusicRecommender:BdaMusicRecommender:0.0.1-SNAPSHOT @ /home/livlab/lecture/BdaMusicRecommender/pom.xml.
+2014-06-11 13:25:55,972 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:25:55,973 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/HadoopExamples/src/main/resources
+2014-06-11 13:25:55,974 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:25:55,974 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/HadoopExamples/src/test/resources
+2014-06-11 13:25:56,487 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:25:56,487 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/StormExamples/src/main/resources
+2014-06-11 13:25:56,488 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:25:56,489 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/StormExamples/src/test/resources
+2014-06-11 13:25:56,872 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: StormExamples:StormExamples:0.0.1-SNAPSHOT @ /home/livlab/lecture/StormExamples/pom.xml.
+2014-06-11 13:25:57,510 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: HadoopExamples:HadoopExamples:0.0.1-SNAPSHOT @ /home/livlab/lecture/HadoopExamples/pom.xml.
+2014-06-11 13:25:58,851 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:25:58,852 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/BdaMusicRecommender/src/main/resources
+2014-06-11 13:25:58,853 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:25:58,854 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/BdaMusicRecommender/src/test/resources
+2014-06-11 13:25:58,891 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:25:58,891 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/HadoopExamples/src/main/resources
+2014-06-11 13:25:58,895 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:25:58,895 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/HadoopExamples/src/test/resources
+2014-06-11 13:25:58,916 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:25:58,917 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/StormExamples/src/main/resources
+2014-06-11 13:25:58,918 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:25:58,928 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/StormExamples/src/test/resources
+2014-06-11 13:35:37,592 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:35:37,610 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/BdaMusicRecommender/src/main/resources
+2014-06-11 13:35:37,613 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:35:37,614 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/BdaMusicRecommender/src/test/resources
+2014-06-11 13:35:38,173 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:35:38,196 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/HadoopExamples/src/main/resources
+2014-06-11 13:35:38,198 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:35:38,198 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/HadoopExamples/src/test/resources
+2014-06-11 13:37:07,458 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:37:07,459 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/HadoopExamples/src/main/resources
+2014-06-11 13:37:07,462 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:37:07,462 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/HadoopExamples/src/test/resources
+2014-06-11 13:37:12,834 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:37:12,834 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/HadoopExamples/src/main/resources
+2014-06-11 13:37:12,835 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:37:12,836 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/HadoopExamples/src/test/resources
+2014-06-11 13:48:15,947 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:48:15,978 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/BdaMusicRecommender/src/main/resources
+2014-06-11 13:48:15,998 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:48:15,998 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/BdaMusicRecommender/src/test/resources
+2014-06-11 13:48:18,073 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:48:18,075 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/HadoopExamples/src/main/resources
+2014-06-11 13:48:18,077 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:48:18,077 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/HadoopExamples/src/test/resources
+2014-06-11 13:48:42,729 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:48:42,729 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/BdaMusicRecommender/src/main/resources
+2014-06-11 13:48:42,732 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-06-11 13:48:42,732 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/livlab/lecture/BdaMusicRecommender/src/test/resources

@@ -1,0 +1,39 @@
+# Hadoop - MapReduce WordCount
+hadoop dfs -rmr /user/livlab/WordCountResult
+hadoop jar /home/livlab/living_lab_examples/HadoopExamples/target/HadoopExamples-0.0.1-SNAPSHOT-jar-with-dependencies.jar de.fhg.iais.kd.hadoop.examples.WordCount hdfs://localhost:54310/user/livlab/test.txt hdfs://localhost:54310/user/livlab/WordCountResult/
+
+# Cascading WordCount
+hadoop dfs -rmr /user/livlab/CascadingResult
+hadoop jar /home/livlab/living_lab_examples/HadoopExamples/target/HadoopExamples-0.0.1-SNAPSHOT-jar-with-dependencies.jar de.fhg.iais.kd.hadoop.examples.CascadingWordCount hdfs://localhost:54310/user/livlab/test.txt hdfs://localhost:54310//user/livlab/CascadingResult
+
+
+## Lingual
+#Aggregates
+SELECT count(*) FROM employees.titles;
++---------+
+| EXPR$0  |
++---------+
+| 443307  |
++---------+
+
+## JOIN
+SELECT a.last_name name, b.title title
+FROM EMPLOYEES.employees a
+LEFT JOIN EMPLOYEES.titles b
+ON a.emp_no = b.emp_no
+LIMIT 10;
+
++------------+---------------------+
+|    NAME    |        TITLE        |
++------------+---------------------+
+| Simmel     | Staff               |
+| Bamford    | Senior Engineer     |
+| Koblick    | Engineer            |
+| Koblick    | Senior Engineer     |
+| Maliniak   | Senior Staff        |
+| Maliniak   | Staff               |
+| Preusig    | Senior Engineer     |
+| Zielinski  | Senior Staff        |
+| Zielinski  | Staff               |
+| Kalloufi   | Assistant Engineer  |
++------------+---------------------+
