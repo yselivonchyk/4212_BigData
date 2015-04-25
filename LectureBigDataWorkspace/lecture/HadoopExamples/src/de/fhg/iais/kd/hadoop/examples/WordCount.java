@@ -24,7 +24,7 @@ import org.apache.hadoop.mapred.TextOutputFormat;
 /**
  * invokde with arguments 
  * src/resources/test.txt /tmp/wordcount
- *
+ * test commit
  */
 
 public class WordCount {
