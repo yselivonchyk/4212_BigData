@@ -60,6 +60,5 @@ public class UserArrayAggregator extends
 		Tuple result = new Tuple();
 		result.add(context.users.toString());
 		aggregatorCall.getOutputCollector().add(result);
-
 	}
 }

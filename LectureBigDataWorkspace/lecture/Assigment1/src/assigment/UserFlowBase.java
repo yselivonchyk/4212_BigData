@@ -21,12 +21,11 @@ import cascading.tap.Tap;
 import cascading.tap.hadoop.Hfs;
 import cascading.tuple.Fields;
 
-public class BatchMatrixBuilder {
-
-	private static final String DELIMITER = "|";
+public class UserFlowBase {
+	private static final String DELIMITER = ",";
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
-	public static Flow getInteractionMatrixFlow(String infile, String outfile) {
+	public static Flow getFlow(String infile, String outfile, Aggregator collect) {
 
 		String inputPath = infile;
 		String outputPath = outfile;
@@ -54,12 +53,10 @@ public class BatchMatrixBuilder {
 		// group by artist
 		pipe = new GroupBy(pipe, new Fields("artist_name"));
 
-		// Aggregate user list
-		Aggregator collect = new UserArrayAggregator(new Fields("uid"));
 		pipe = new Every(pipe, collect);
 
 		Properties properties = new Properties();
-		AppProps.setApplicationJarClass(properties, BatchMatrixBuilder.class);
+		AppProps.setApplicationJarClass(properties, UserSetMatrixFlow.class);
 
 		FlowConnector flowConnector = new HadoopFlowConnector(properties);
 		// FlowConnector flowConnector = new HadoopFlowConnector();
@@ -70,6 +67,5 @@ public class BatchMatrixBuilder {
 		Flow flow = flowConnector.connect("uitlityMatrix", source, endPoints,
 				pipe);
 		return flow;
-
 	}
 }

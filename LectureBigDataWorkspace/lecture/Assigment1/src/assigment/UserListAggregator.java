@@ -10,15 +10,16 @@ import cascading.tuple.Fields;
 import cascading.tuple.Tuple;
 import cascading.tuple.TupleEntry;
 
-public class CollectUsers extends BaseOperation<CollectUsers.Context> implements
-		Aggregator<CollectUsers.Context> {
+public class UserListAggregator extends
+		BaseOperation<UserListAggregator.Context> implements
+		Aggregator<UserListAggregator.Context> {
 
 	private static final long serialVersionUID = 1L;
 
 	public class Context extends LinkedList<String> {
 	}
 
-	public CollectUsers(Fields fields) {
+	public UserListAggregator(Fields fields) {
 		super(1, fields); // one input field, output fields named as in
 							// constructor call
 	}
