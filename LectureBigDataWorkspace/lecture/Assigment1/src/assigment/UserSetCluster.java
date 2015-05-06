@@ -27,21 +27,32 @@ public class UserSetCluster {
 	private static final String DELIMITER = ",";
 
 	public static void main(String[] args) {
-		String infile = "src/resources/sorted_sample.tsv";
-		String workDir = "recommender_flowtest/";
+		String infile = getStringFromArgs(args, 0,
+				"src/resources/sorted_sample.tsv");
+		String workDir = getStringFromArgs(args, 1, "recommender_flowtest/");
+		String clusterfile = getStringFromArgs(args, 2, "recommender_flowtest/");
 
-		Flow utilMatrix = getFlow(infile, workDir);
+		Flow utilMatrix = getFlow(infile, workDir, clusterfile);
 		utilMatrix.complete();
 	}
 
-	@SuppressWarnings({ "rawtypes", "unchecked" })
-	public static Flow getFlow(String infile, String outfile) {
-		Aggregator collect = new UserArrayAggregator(new Fields("uid"));
-		return UserFlowBase.getFlow(infile, outfile, collect);
+	public static String getStringFromArgs(String[] args, int position,
+			String defaultResult) {
+		if (args.length < position) {
+			return defaultResult;
+		}
+		return args[position];
 	}
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
-	public static Flow getFlow(String infile, String outfile, Aggregator collect) {
+	public static Flow getFlow(String infile, String outfile, String clusterfile) {
+		Aggregator collect = new UserArrayAggregator(new Fields("uid"));
+		return getFlow(infile, outfile, clusterfile, collect);
+	}
+
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	public static Flow getFlow(String infile, String outfile,
+			String clusterfile, Aggregator collect) {
 
 		String inputPath = infile;
 		String outputPath = outfile;
@@ -71,10 +82,11 @@ public class UserSetCluster {
 		pipe = new Every(pipe, collect, new Fields("users"));
 
 		// Convert user array into cluster data
-		ClusterModel model = ClusterModelFactory.readFromCsvResource("");
+		ClusterModel model = ClusterModelFactory
+				.readFromCsvResource(clusterfile);
 		UserSetClusterModel clusterModel = new UserSetClusterModel(model);
 		ProjectToCluster clusterProjection = new ProjectToCluster(new Fields(
-				"users"), new Fields("cluster"), null);
+				"users"), new Fields("cluster"), clusterModel);
 		pipe = new Each(pipe, targetFields, clusterProjection);
 
 		Properties properties = new Properties();
