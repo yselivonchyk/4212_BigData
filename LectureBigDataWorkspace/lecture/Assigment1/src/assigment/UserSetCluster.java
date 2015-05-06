@@ -30,7 +30,8 @@ public class UserSetCluster {
 		String infile = getStringFromArgs(args, 0,
 				"src/resources/sorted_sample.tsv");
 		String workDir = getStringFromArgs(args, 1, "recommender_flowtest/");
-		String clusterfile = getStringFromArgs(args, 2, "recommender_flowtest/");
+		String clusterfile = getStringFromArgs(args, 2,
+				"./resources/centers_1000_iter_2_50.csv");
 
 		Flow utilMatrix = getFlow(infile, workDir, clusterfile);
 		utilMatrix.complete();
@@ -38,7 +39,7 @@ public class UserSetCluster {
 
 	public static String getStringFromArgs(String[] args, int position,
 			String defaultResult) {
-		if (args.length < position) {
+		if (args.length <= position) {
 			return defaultResult;
 		}
 		return args[position];
@@ -65,7 +66,7 @@ public class UserSetCluster {
 
 		Scheme outputSehema = new TextDelimited(false, DELIMITER);
 
-		Tap matrix = new Hfs(outputSehema, outputPath + "/matrix",
+		Tap matrix = new Hfs(outputSehema, outputPath + "/" + "cluster",
 				SinkMode.REPLACE);
 
 		Pipe pipe = new Pipe("listenEvts");
@@ -79,14 +80,15 @@ public class UserSetCluster {
 		pipe = new Unique(pipe, new Fields("uid", "artist_name"));
 		// group by artist
 		pipe = new GroupBy(pipe, new Fields("artist_name"));
-		pipe = new Every(pipe, collect, new Fields("users"));
+
+		pipe = new Every(pipe, collect);
 
 		// Convert user array into cluster data
 		ClusterModel model = ClusterModelFactory
 				.readFromCsvResource(clusterfile);
 		UserSetClusterModel clusterModel = new UserSetClusterModel(model);
 		ProjectToCluster clusterProjection = new ProjectToCluster(new Fields(
-				"users"), new Fields("cluster"), clusterModel);
+				"uid"), new Fields("cluster"), clusterModel);
 		pipe = new Each(pipe, targetFields, clusterProjection);
 
 		Properties properties = new Properties();

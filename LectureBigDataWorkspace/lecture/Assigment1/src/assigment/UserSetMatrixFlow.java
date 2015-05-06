@@ -17,6 +17,6 @@ public class UserSetMatrixFlow extends UserFlowBase {
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static Flow getFlow(String infile, String outfile) {
 		Aggregator collect = new UserArrayAggregator(new Fields("uid"));
-		return UserFlowBase.getFlow(infile, outfile, collect);
+		return UserFlowBase.getFlow(infile, outfile, collect, "matrixFlow");
 	}
 }

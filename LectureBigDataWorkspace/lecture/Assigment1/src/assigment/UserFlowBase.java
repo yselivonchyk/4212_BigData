@@ -25,7 +25,8 @@ public class UserFlowBase {
 	private static final String DELIMITER = ",";
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
-	public static Flow getFlow(String infile, String outfile, Aggregator collect) {
+	public static Flow getFlow(String infile, String outfile,
+			Aggregator collect, String postfix) {
 
 		String inputPath = infile;
 		String outputPath = outfile;
@@ -38,7 +39,7 @@ public class UserFlowBase {
 
 		Scheme outputSehema = new TextDelimited(false, DELIMITER);
 
-		Tap matrix = new Hfs(outputSehema, outputPath + "/matrix",
+		Tap matrix = new Hfs(outputSehema, outputPath + "/" + postfix,
 				SinkMode.REPLACE);
 
 		Pipe pipe = new Pipe("listenEvts");

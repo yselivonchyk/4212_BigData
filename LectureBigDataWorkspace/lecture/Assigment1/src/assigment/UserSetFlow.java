@@ -17,6 +17,6 @@ public class UserSetFlow extends UserFlowBase {
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static Flow getFlow(String infile, String outfile) {
 		Aggregator collect = new UserListAggregator(new Fields("uid"));
-		return UserFlowBase.getFlow(infile, outfile, collect);
+		return UserFlowBase.getFlow(infile, outfile, collect, "userFlow");
 	}
 }
