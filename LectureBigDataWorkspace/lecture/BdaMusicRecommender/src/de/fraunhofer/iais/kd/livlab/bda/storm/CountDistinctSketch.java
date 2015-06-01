@@ -20,15 +20,26 @@ public class CountDistinctSketch extends Sketch {
 
 	// get estimation of how many distinct users are added in the sketch
 	public int getEstimate() {
-		int coord = this.cardinality();
-		int size = this.getSketchsize();
-		return (int) Math.round(-1.0 * size * Math.log((size - coord) / size)
+		return estimateCount(this.getSketchsize(), this.cardinality());
+	}
+
+	private static int estimateCount(int size, Sketch sketch) {
+		return estimateCount(size, sketch.cardinality());
+	}
+
+	private static int estimateCount(int size, int filled) {
+		return (int) Math.round(-1.0 * size * Math.log((size - filled) / size)
 				/ Math.log(Math.E));
 	}
 
 	// compute Jaccard-Distance to another CountDistinctSketch
 	public double distanceTo(CountDistinctSketch other) {
-		return 0;
+		Sketch union = this.orSketch(other);
+		int unionSize = estimateCount(this.getSketchsize(), union);
+		int intersectionSize = this.getEstimate() + other.getEstimate()
+				- unionSize;
+
+		return 1 - intersectionSize / unionSize;
 	}
 
 }
