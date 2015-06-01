@@ -11,7 +11,11 @@ public class CountDistinctSketch extends Sketch {
 
 	// add a user to the CountDistinctStetch
 	public void addUser(String username) {
-		this.setBit(getUserID(username));
+		addUser(getUserID(username));
+	}
+
+	public void addUser(int id) {
+		this.setBit(id % this.getSketchsize());
 	}
 
 	private int getUserID(String user) {
